@@ -17,8 +17,8 @@ app.use('/api/workouts', workoutRoutes); // API route for workout-related reques
 
 
 // MongoDB Connection
-const mongoURI = 'mongodb://localhost:27017/workout-tracker';
-// const mongoURI = 'mongodb+srv://nishayadav22:nisha8130@cluster0.ksywd.mongodb.net/workout-tracker';   //'nisha8130'
+// const mongoURI = 'mongodb://localhost:27017/workout-tracker';
+const mongoURI = 'mongodb+srv://nishayadav22:nisha8130@cluster0.ksywd.mongodb.net/workout-tracker';   //'nisha8130'
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true, // Deprecated in v4.0.0, but still supported for now
